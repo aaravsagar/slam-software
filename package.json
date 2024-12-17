@@ -1,0 +1,37 @@
+{
+  "name": "slam-software",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "An Electron app that opens the Slam Eight website with added navigation controls.",
+  "author": "Your Name",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "slam-eight",
+    "desktop-app"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.slam.software",
+    "productName": "Slam Software",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "msi"
+      ],
+      "icon": "logo.png"
+    }
+  }
+}
